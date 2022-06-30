@@ -1,11 +1,13 @@
 const fizzBuzz = (number) => {
-    if (number % 5 === 0 && number % 3 === 0) return "FizzBuzz"
+    if (isMultipleOf(number, 5) && isMultipleOf(number, 3)) return "FizzBuzz"
 
-    if (number % 5 === 0) return "Buzz"
+    if (isMultipleOf(number, 5)) return "Buzz"
 
-    if (number % 3 === 0) return "Fizz"
+    if (isMultipleOf(number, 3)) return "Fizz"
 
     return number.toString()
 }
+
+const isMultipleOf = (number, divider) => number % divider === 0
 
 module.exports = fizzBuzz
