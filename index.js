@@ -1,5 +1,5 @@
 const fizzBuzz = (number) => {
-    return "1"
+    return number.toString()
 }
 
 module.exports = fizzBuzz
