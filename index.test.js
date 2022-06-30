@@ -12,4 +12,10 @@ describe("FizzBuzz kata", () => {
 
         expect(result).toEqual("Fizz")
     })
+
+    it("should returns Buzz if the number is multiple of 5", () => {
+        const result = fizzBuzz(10)
+
+        expect(result).toEqual("Buzz")
+    })
 })
