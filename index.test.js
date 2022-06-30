@@ -7,7 +7,7 @@ describe("FizzBuzz kata", () => {
         expect(result).toEqual("1")
     })
 
-    it("should returns Fizz if the number is 3", () => {
+    it("should returns Fizz if the number is multiple of 3", () => {
         const result = fizzBuzz(3)
 
         expect(result).toEqual("Fizz")
